@@ -168,6 +168,7 @@ var init = function init(settings) {
   appendChild(settings.element, actionbar);
 
   var content = settings.element.content = createElement('div');
+  content.id = "pell-content";
   content.contentEditable = true;
   content.className = classes.content;
   content.oninput = function (_ref) {
