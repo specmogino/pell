@@ -119,6 +119,7 @@ export const init = settings => {
 
   const content = settings.element.content = createElement('div')
   content.id = "pell-content"
+  content.ref = "pell-content"
   content.contentEditable = true
   content.className = classes.content
   content.oninput = ({ target: { firstChild } }) => {
